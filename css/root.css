@@ -1,0 +1,6 @@
+:root {
+    --primary-font: 'Roboto Condensed';
+    --primary-color: rgba(255, 255, 255, 0.8);
+    --secondary-color: rgba(7,181,144,0.3827906162464986);
+    --secondary-lighter-color: rgba(35,0,0,1);
+}
