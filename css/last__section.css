@@ -14,7 +14,7 @@
 .last-title {
     font-family: var(--primary-font);
     font-weight: 700;
-    font-size: 100px;
+    font-size: clamp(2.5rem, 1.429rem + 5.357vw, 6.25rem);
     line-height: 1.5;
     letter-spacing: 4px;
     text-align: center;
@@ -26,14 +26,14 @@
 .last-text {
     font-family: var(--primary-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.857rem + 0.714vw, 1.5rem);
     line-height: 1.5;
     letter-spacing: 0.5px;
     text-align: center;
 }
 .last-text span {
     font-weight: 700;
-    font-size: 32px;
+    font-size: clamp(1.125rem, 0.875rem + 1.25vw, 2rem);
 }
 .last__end {
     margin-top: 150px;
@@ -50,8 +50,8 @@
     flex-wrap: wrap;
 }
 .last-icon {
-    width: 150px;
-    height: 150px;
+    width: clamp(6.25rem, 5.357rem + 4.464vw, 9.375rem);
+    height: clamp(6.25rem, 5.357rem + 4.464vw, 9.375rem);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -86,7 +86,7 @@
 .icon-text {
     font-family: var(--primary-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1rem, 0.857rem + 0.714vw, 1.5rem);
     text-wrap: nowrap;
 }
 .last-icon:hover {

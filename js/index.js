@@ -6,10 +6,6 @@ const swiper = new Swiper('.swiper', {
       pauseOnMouseEnter: true,
     },
 
-    
-
-
-
     effect: 'cards',
     cardsEffect: {
       slideShadows: true

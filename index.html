@@ -3,14 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta link -->
+    <meta name="description" content="Champions Tactics Fan Art by Colg8">
+    <meta name="keywords" content="Champions Tactics, Ubisoft, Colg8, colg8">
     <title>Champions Tactics | by colg8</title>
     <!-- fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700;800&display=swap" rel="stylesheet">
-    <!-- meta link -->
     
     <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./source/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./source/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./source/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./source/img/favicon/site.webmanifest">
     
     <!-- css -->
     <link rel="stylesheet" href="css/main.css">
@@ -20,6 +26,8 @@
     <link rel="stylesheet" href="css/about__section.css">
     <link rel="stylesheet" href="css/champions__section.css">
     <link rel="stylesheet" href="css/last__section.css">
+    <link rel="stylesheet" href="css/adaptive.css">
+    <link rel="stylesheet" href="css/footer.css">
     <!-- swiper -->
     <link
     rel="stylesheet"
@@ -35,7 +43,7 @@
                     <div class="nav-container">
                         <div class="nav__logo">
                             <div class="nav-logo">
-                                <a href="https://colg8git.github.io/championstactics/">
+                                <a href="https://colg8git.github.io/championstactics/" target="_blank">
                                     <svg viewBox="0 0 152 280" fill="white" xmlns="http://www.w3.org/2000/svg" alt="Champions Tactics™ Grimoria Chronicles" width="73" height="90"><path fill-rule="evenodd" clip-rule="evenodd" d="M151.883 158.665c-.6-1.006-11.233-19.708-11.84-30.764.357-3.543 1.764-7.991 3.136-12.328 1.689-5.337 3.324-10.506 2.882-13.614-.802-5.633-2.608-9.854-3.814-9.854-.474 0-.914 1.114-1.494 2.578-.897 2.267-2.126 5.373-4.321 6.473-.66.33-1.519.734-2.494 1.192h-.001c-4.365 2.052-11.039 5.187-12.35 7.655-1.603 3.019-3.612 3.418-5.215 2.013-1.604-1.405-15.249-26.941-16.253-32.98-1.004-6.03-.404-18.498-.404-18.498s-8.228-5.829-6.422-15.082c1.29-6.606 5.852-11.058 8.357-13.5 1.003-.98 1.676-1.636 1.676-1.98 0-1.202-9.224-21.539-34.102-29.974 0 0-4.616-.594-20.464 18.31 0 0-2.204 5.228.6 8.645.107.428.499.073 1.231-.592 2.02-1.833 6.63-6.017 15.021-2.622 11.435 4.626 22.068 22.922 21.866 24.53-.02.15-.003.455.021.894.23 4.23 1.138 20.978-22.486 34.09 0 0-1.207 1.007-1.207 2.412 0 .355.103 1.768.243 3.699.415 5.697 1.158 15.909.56 16.812-.803 1.209-6.22 8.848-8.828 9.449-2.608.601-19.056-5.633-19.258-16.486-.176-9.451 5.425-24.687 7.014-29.012.238-.645.385-1.047.412-1.151.202-.804.035-5.165-3.612-2.209 0 0-8.025 5.43-16.853 18.101-2.312 3.885-3.612 6.61-4.74 8.976-1.744 3.655-3.077 6.449-7.099 11.333-6.617 8.044-5.62 7.639-5.62 7.639s-.404 2.012 1.207 6.835c1.603 4.829 3.611 15.479 3.41 17.492-.061.599-.975 4.405-2.217 9.583-2.932 12.216-7.697 32.067-7.413 35.459-.014 2.816 32.499 53.484 40.726 58.718 0 0 9.03 1.405 28.685 2.817 19.662 1.404 28.49 1.404 28.49 1.404s15.848-16.828 19.662-17.492c0 0 10.229-2.208 12.641-4.829 2.413-2.621 21.266-63.143 20.667-64.142Zm-36.048 46.251c-.963 2.891-12.413 11.615-20.18 17.534-3.029 2.307-5.497 4.187-6.567 5.13-3.813 3.362-4.21 2.069-4.21 2.069-4.01-10.658-3.417-56.245-2.81-56.951.322-.375 8.488-2.081 16.163-3.684 6.756-1.411 13.131-2.743 13.441-3.018.663-.587 3.459-17.436 1.451-16.612-.386.159-1.781.811-3.813 1.763-8.547 4-28.377 13.282-31.942 13.305-4.414.035-37.338-11.084-37.338-11.084s.635 12.565 1.402 13.229c.39.339 8.328 1.855 16.126 3.345v.001c7.502 1.433 14.874 2.842 15.278 3.154.83.636-1.207 59.361-1.207 59.361-8.827-2.208-22.87-16.088-22.87-16.088s.803-4.424 0-5.025c-.801-.601-5.62-1.006-5.62-1.006l-6.016-6.234c-3.012-13.474-8.228-60.123-8.228-60.123s29.891-26.746 45.74-26.138c15.848.601 47.343 20.309 48.946 22.518 1.604 2.208-6.421 60.521-7.76 64.547l.014.007Zm20.597-126.683s1.401-.601-1.806-8.247l-.129-.305c-3.091-7.366-3.586-8.545-11.104-8.745-5.418 0-8.228 4.221-7.426 5.025.379.38 2.321.94 4.445 1.551 2.369.683 4.966 1.431 5.875 2.069.591.415 1.758 1.563 3.11 2.892 2.587 2.545 5.848 5.753 7.035 5.753v.007ZM105.739 196.27c-.398-1.209 2.81-4.221 2.81-4.221 2.81.007 1.805 7.233 0 7.638-1.633.367-2.285-1.734-2.689-3.033a25.16 25.16 0 0 0-.121-.384Z"></path><defs><linearGradient id="game-logo_svg__a" x1="76.308" y1="0.002" x2="76.308" y2="245.303" gradientUnits="userSpaceOnUse"><stop offset="0.209" stop-color="#F7E496"></stop><stop offset="0.811" stop-color="#C1A459"></stop></linearGradient></defs></svg>
                                 </a>
                             </div>
@@ -45,8 +53,11 @@
                                 <a href="https://discord.gg/championstactics" class="nav-link link link-1" target="_blank">DISCORD</a>
                                 <a href="https://twitter.com/championsverse" class="nav-link link link-2" target="_blank">TWITTER</a>
                                 <a href="https://championstactics.ubisoft.com/" class="nav-link link link-3" target="_blank">OFFICIAL WEBSITE</a>
-                                <a href="https://championstactics.ubisoft.com/faq/" class="nav-link link link-4" target="_blank">FAQ</a>
+                                <a href="https://discord.gg/championstactics" class="nav-link link link-4" target="_blank">FAQ</a>
                             </div>
+                        </div>
+                        <div class="burger-menu">
+                            <span></span>
                         </div>
                     </div>
                 </nav>
@@ -73,10 +84,10 @@
             </section>
             <section class="about__section">
                 <div class="about__container">
-                    <div class="about__title">
+                    <div class="about__title animBlock">
                         <h1 class="about-title title text">ABOUT THE GAME</h1>
                     </div>
-                    <div class="about__subtitle">
+                    <div class="about__subtitle animBlock">
                         <div class="about__text">
                             <p class="about-text text">Champions Tactics™ Grimoria Chronicles is a brand new PVP Tactical RPG experimental game on PC currently in development at Ubisoft. 
                                 Assemble a team of mythical Champions, engage in thrilling tactical battles against other players and discover the legends of the dark and mystical world of Grimoria. <br>
@@ -92,10 +103,10 @@
             </section>
             <section class="champions__section">
                 <div class="champions__container">
-                    <div class="champions__title">
+                    <div class="champions__title animBlock">
                         <h1 class="champions-title title text">WELCOME TO GRIMORIA</h1>
                     </div>
-                    <div class="champions__subtitle">
+                    <div class="champions__subtitle animBlock">
                         <div class="subtitle__title">
                             <p class="subtitle-text text">Step into <strong>Grimoria</strong>,
                                 a realm where stories unravel in seven grand Factions, each represented by legendary Warlords. <br>
@@ -109,7 +120,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="champions__swiper">
+                    <div class="champions__swiper animBlock">
                         <div class="swiper__title">
                             <h1 class="swiper-title title text">FACTIONS & WARLORDS</h1>
                             <div class="swiper-text text">In the mystical realm of Grimoria, seven factions rise to prominence, each a testament to its own set of values, beliefs, and motivations. These factions shape the very essence of this world.
@@ -231,10 +242,10 @@
             </section>
             <section class="last__section">
                 <div class="last__container">
-                    <div class="last__title">
+                    <div class="last__title animBlock">
                         <h1 class="last-title title text">Get ready to claim your free Warlords soon!</h1>
                     </div>
-                    <div class="last__main">
+                    <div class="last__main animBlock">
                         <p class="last-text text">Introducing The Warlords, a PFP collection of 9,999* unique digital collectibles.
                             Each Warlord provides an exclusive early-access to the Champions drop, allowing you to mint up to 5 of them for free*. <br>
                             <br>With over 170 unique traits, including armor, weapons, headgear, and more, each Warlord is truly one-of-a-kind. Some traits hold more rarity than others.
@@ -244,7 +255,7 @@
                     </div>
                     <div class="last__end">
                         <div class="last-icons">
-                            <div class="last-icon icon-1 ">
+                            <div class="last-icon icon-1">
                                 <svg viewBox="0 0 143 144" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#on-eth_svg__a)"><mask id="on-eth_svg__c" maskUnits="userSpaceOnUse" x="0" y="0" width="143" height="144" fill="#000"><path fill="#fff" d="M0 0h143v144H0z"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M71.737 9.785c4.629 4.658 19.448 20.504 19.448 20.504l-.701-8.493L71.739 2 2 72.173l41.07 41.325c1.798 1.808 8.827 1.65 9.36 1.636l.03.03c-.03.52-.387 7.392 1.181 8.97 10.339 10.405 18.098 18.21 18.098 18.21l69.729-70.171-39.707-39.96-5.191 2.562 37.163 37.398-61.996 62.389-19.278-19.398a6.37 6.37 0 0 0 .002-.031l-.032.001L9.734 72.173 71.737 9.785ZM71.241 42 53 73.033l18.881 10.558 17.922-10.877-4.671-7.73h-4.873l-.929-7.437.52-1.302L71.241 42Zm.32 60.147 18.242-25.595L71.881 87.75 53.64 76.232l5.834 8.437 4.977 3.555.483 4.34 6.627 9.583Z"></path></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M71.737 9.785c4.629 4.658 19.448 20.504 19.448 20.504l-.701-8.493L71.739 2 2 72.173l41.07 41.325c1.798 1.808 8.827 1.65 9.36 1.636l.03.03c-.03.52-.387 7.392 1.181 8.97 10.339 10.405 18.098 18.21 18.098 18.21l69.729-70.171-39.707-39.96-5.191 2.562 37.163 37.398-61.996 62.389-19.278-19.398a6.37 6.37 0 0 0 .002-.031l-.032.001L9.734 72.173 71.737 9.785ZM71.241 42 53 73.033l18.881 10.558 17.922-10.877-4.671-7.73h-4.873l-.929-7.437.52-1.302L71.241 42Zm.32 60.147 18.242-25.595L71.881 87.75 53.64 76.232l5.834 8.437 4.977 3.555.483 4.34 6.627 9.583Z" fill="url(#on-eth_svg__b)"></path><path d="m91.185 30.289-.73.683 1.963 2.1-.236-2.865-.997.082ZM71.737 9.785l.71-.705-.71-.714-.71.714.71.705Zm18.747 12.011.997-.082-.03-.35-.24-.256-.727.688ZM71.739 2l.726-.688-.709-.748-.726.731.709.705ZM2 72.173l-.71-.705-.7.705.7.705.71-.705Zm41.07 41.325-.71.705h.001l.709-.705Zm10.571 10.636.71-.705-.71.705Zm18.098 18.21-.71.705.71.714.71-.714-.71-.705Zm69.729-70.171.709.705.701-.705-.701-.705-.709.705Zm-39.707-39.96.709-.705-.507-.51-.645.318.443.897Zm-5.191 2.562-.443-.897-1.246.616.98.986.709-.705Zm37.163 37.398.709.705.701-.705-.701-.705-.709.705Zm-61.996 62.389-.71.705.71.714.71-.714-.71-.705Zm-19.276-19.429.998.061.067-1.097-1.098.037.033.999ZM9.734 72.173l-.71-.705-.7.705.7.705.71-.705Zm43.266.86-.862-.507-.518.881.892.499.488-.873ZM71.241 42l.856-.517-.868-1.436-.85 1.446.862.507Zm.64 41.591-.488.873.509.284.498-.302-.519-.855Zm17.922-10.877.519.855.853-.518-.516-.854-.856.517Zm-4.671-7.73.856-.517-.292-.483h-.564v1Zm-4.873 0-.992.124.11.876h.882v-1Zm-.929-7.437-.929-.37-.095.238.032.256.992-.124Zm.52-1.302.929.37.184-.461-.257-.426-.856.517Zm9.953 20.307.814.58-1.344-1.428.53.848Zm-18.242 25.595-.823.569.81 1.171.827-1.16-.814-.58Zm.32-14.397-.534.846.531.335.533-.333-.53-.848ZM53.64 76.232l.534-.846-1.356 1.415.822-.569Zm5.834 8.437-.822.569.099.143.142.102.581-.814Zm4.977 3.555.994-.11-.05-.444-.363-.26-.581.814Zm.483 4.34-.994.11.028.251.144.208.822-.569Zm26.251-62.275.73-.683-.002-.003a.329.329 0 0 1-.008-.009c-.008-.007-.018-.019-.032-.034l-.125-.133a5476.849 5476.849 0 0 0-2.221-2.37c-1.462-1.56-3.46-3.686-5.603-5.96-4.28-4.54-9.152-9.677-11.478-12.017l-1.418 1.41c2.303 2.317 7.155 7.433 11.441 11.98a3277.06 3277.06 0 0 1 7.34 7.813l.478.51.125.134.032.034a.46.46 0 0 1 .008.008l.002.002.731-.682Zm-1.698-8.41.701 8.492 1.994-.164-.701-8.493-1.994.164ZM71.013 2.687l18.745 19.796 1.452-1.376L72.465 1.312l-1.452 1.376ZM2.709 72.878 72.45 2.705l-1.42-1.41L1.292 71.468l1.418 1.41Zm41.07 39.915-27.748-27.92-9.61-9.67-2.736-2.753-.726-.73-.186-.188a35.37 35.37 0 0 0-.063-.064l-.71.705-.709.705.004.004a2.64 2.64 0 0 0 .059.06l.187.187.725.73 2.737 2.754 9.61 9.67 27.748 27.92 1.418-1.41Zm8.623 1.341c-.252.007-2.097.049-4.088-.131-.997-.09-2-.233-2.846-.453-.885-.23-1.438-.505-1.689-.757l-1.418 1.41c.648.652 1.648 1.035 2.604 1.283.994.259 2.118.414 3.17.509 2.106.19 4.041.146 4.322.139l-.055-2Zm-.682 1.705.03.03 1.419-1.41-.03-.03-1.42 1.41Zm2.63 7.59c-.172-.173-.399-.643-.581-1.498-.171-.801-.269-1.765-.32-2.731-.1-1.926-.005-3.732.009-3.979l-1.997-.113a42.382 42.382 0 0 0-.009 4.196c.053 1.015.159 2.097.36 3.045.192.894.508 1.875 1.12 2.49l1.418-1.41Zm17.389 18.915.71-.705h-.001l-.001-.001-.005-.005-.016-.017-.067-.067-.264-.266-1.02-1.026-3.799-3.821-12.926-13.007-1.418 1.41 12.926 13.007 3.798 3.821 1.02 1.026.264.266.067.067a.222.222 0 0 0 .017.017l.004.005.001.001.71-.705Zm69.02-70.876-69.73 70.171 1.42 1.41 69.728-70.171-1.418-1.41Zm-39.707-38.55 39.707 39.96 1.418-1.41-39.707-39.96-1.418 1.41Zm-4.04 2.754 5.192-2.562-.886-1.794-5.19 2.562.885 1.794Zm37.43 35.796L97.279 34.07l-1.418 1.41 37.163 37.398 1.418-1.41Zm-61.996 63.799 61.996-62.39-1.418-1.409-61.996 62.389 1.418 1.41ZM51.75 115.869l19.278 19.398 1.418-1.41-19.277-19.398-1.42 1.41Zm1.708-.648a.987.987 0 0 1 .001-.026v-.001l-.998-.061-.998-.061v.01l-.002.026 1.997.113Zm-.997-.088-.033-.999H52.401l.054 2 .027-.001h.008l.002-.001h.001l-.033-.999ZM9.025 72.878l42.695 42.961 1.418-1.41-42.695-42.96-1.418 1.409ZM71.028 9.08 9.025 71.468l1.418 1.41L72.446 10.49l-1.418-1.41ZM53.862 73.54l18.241-31.033-1.724-1.014-18.241 31.033 1.724 1.014Zm18.507 9.178L53.49 72.16l-.977 1.746 18.88 10.558.977-1.746ZM89.284 71.86 71.362 82.736l1.038 1.71 17.922-10.877-1.038-1.71Zm-5.008-6.358 4.671 7.73 1.712-1.034-4.671-7.73-1.712 1.034Zm-4.017.483h4.873v-2h-4.873v2Zm-1.921-8.313.929 7.437 1.984-.248-.929-7.437-1.984.248Zm.583-1.797-.52 1.302 1.858.742.52-1.302-1.858-.742Zm-8.536-13.357 8.61 14.245 1.71-1.034-8.608-14.245-1.712 1.034ZM88.99 75.972l-18.242 25.595 1.628 1.16 18.242-25.595-1.628-1.16ZM72.41 88.598 90.333 77.4l-1.06-1.696-17.922 11.198 1.06 1.696Zm-19.305-11.52 18.241 11.517 1.068-1.69-18.241-11.519-1.068 1.692Zm7.19 7.022-5.834-8.437-1.645 1.138 5.834 8.437 1.645-1.138Zm4.736 3.31-4.977-3.555-1.162 1.628 4.977 3.555 1.162-1.628Zm.896 5.043-.483-4.34-1.988.222.483 4.34 1.988-.222Zm6.456 9.125-6.627-9.583-1.645 1.138 6.627 9.583 1.644-1.138Z" fill="#000" fill-opacity="0.7" mask="url(#on-eth_svg__c)"></path></g><defs><linearGradient id="on-eth_svg__b" x1="2" y1="142" x2="2" y2="2" gradientUnits="userSpaceOnUse"><stop offset="0.411" stop-color="white"></stop><stop offset="0.573" stop-color="white"></stop></linearGradient><clipPath id="on-eth_svg__a"><path fill="#fff" d="M0 0h143v144H0z"></path></clipPath></defs></svg>
                                 <p class="icon-text text">Available on Ethereum</p>
                             </div>
@@ -265,8 +276,18 @@
                 </div>
             </section>
         </main>
-        <footer class="footer"></footer>
+        <footer class="footer">
+            <div class="footer__container">
+                <div class="footer__title">
+                    <h1 class="footer-title title text">діма сюда треба текст вставити
+                    <br>шось тіпа фанарт бай колгейт</h1>
+                </div>
+            </div>
+        </footer>
     </div>
 <script src="js/index.js"></script>
+<script src="./js/scrollAnim.js"></script>
+<script src="./js/background.js"></script>
+<script src="./js/burgerMenu.js"></script>
 </body>
 </html>
