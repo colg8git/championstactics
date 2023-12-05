@@ -6,6 +6,7 @@
     flex-direction: column;
     align-items: center;
     max-width: 1400px;
+    position: relative;
 }
 .champions__title {
     margin-bottom: 50px;
@@ -127,20 +128,55 @@
 .swiper {
     width: 350px;
     height: 500px;
+    position: relative;
+    z-index: 1000;
 }
+.swiper-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    z-index: -1;
+}
+.swiper-block {
+    background-color: rgba(124,182,35,0.5);
+    position: absolute;
+    transition: all 0.3s ease 0s;
+}
+.block-1 {
+    left: 15%;
+    top: 0;
+    width: 200px;
+    height: 200px;
+    box-shadow: 0 0 100px 200px rgba(124,182,35,0.5);
+    border-radius: 50%;
+}
+.block-2 {}
+.block-3 {}
+.block-4 {}
+.block-5 {}
+.block-6 {}
+.block-7 {}
 .champions__swiper {
     margin-top: 100px;
     width: 100%;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    position: relative;
 }
 .swiper__title {
     display: flex;
     flex-direction: column;
     max-width: 800px;
     z-index: 100;
+    align-items: center;
 }
 .swiper-title {
     font-family: var(--primary-font);

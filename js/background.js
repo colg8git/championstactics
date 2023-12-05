@@ -57,3 +57,49 @@
   
 //   // виклик функції розміщення зірок
 //   placeStars(50, "body");
+
+document.addEventListener("DOMContentLoaded", function() {
+    const colors = [
+      'rgba(255, 0, 0, 0.5)',
+      'rgba(0, 255, 0, 0.5)',
+      'rgba(0, 0, 255, 0.5)',
+      'rgba(255, 255, 0, 0.5)',
+      'rgba(255, 0, 255, 0.5)',
+      'rgba(0, 255, 255, 0.5)',
+      'rgba(128, 128, 128, 0.5)'
+    ];
+  
+    const container = document.querySelector('.container');
+  
+    // Функція для створення випадкової фігури
+    function createShape() {
+        const shape = document.createElement('div');
+        shape.classList.add('shape');
+        shape.style.width = getRandomSize();
+        shape.style.height = getRandomSize();
+        shape.style.backgroundColor = getRandomColor();
+        // Рандомне розташування квадратів
+        shape.style.top = getRandomPosition() + 'px';
+        shape.style.left = getRandomPosition() + 'px';
+        container.appendChild(shape);
+      }
+  
+    // Функція для отримання випадкового розміру
+    function getRandomSize() {
+      return Math.floor(Math.random() * 200) + 50 + 'px';
+    }
+  
+    // Функція для отримання випадкового кольору
+    function getRandomColor() {
+      return colors[Math.floor(Math.random() * colors.length)];
+    }
+
+    function getRandomPosition() {
+        return Math.floor(Math.random() * 500); // 500 - максимальна ширина/висота контейнера
+      }
+  
+    // Створення 15 випадкових фігур
+    for (let i = 0; i < 10; i++) {
+      createShape();
+    }
+  });
