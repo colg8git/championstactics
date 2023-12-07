@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
       // Optional parameters
       direction: 'horizontal',
       autoplay: {
-        delay: 3000,
+        delay: 4000,
         pauseOnMouseEnter: true,
       },
 
@@ -37,5 +37,21 @@ document.addEventListener("DOMContentLoaded", function() {
       shape.style.backgroundColor = currentColor; // Застосовуємо колір для всіх блоків поточного слайда
       shape.style.boxShadow = `0 0 500px 300px ${currentColor}`;
     });
+  });
+  const swiperContainer = document.querySelector('.swiper__main');
+
+  // Додавання обробника подій для торкання (натискання) на слайдері
+  swiperContainer.addEventListener('touchstart', () => {
+    // Перевірка, чи працює автоматична прокрутка
+    if (swiper.autoplay.running) {
+      // Зупинити автоматичну прокрутку при торканні на слайдері
+      swiper.autoplay.stop();
+    }
+  });
+
+  // Додавання обробника подій для відпускання пальця зі слайдера
+  swiperContainer.addEventListener('touchend', () => {
+    // Відновлення автоматичної прокрутки після того, як користувач відпустив слайдер
+    swiper.autoplay.start();
   });
 });
