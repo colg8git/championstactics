@@ -11,12 +11,17 @@ document.addEventListener("DOMContentLoaded", function() {
       cardsEffect: {
         slideShadows: true
       },
+
+      navigation: {
+        nextEl: '.swiper-button-2',
+        prevEl: '.swiper-button-1',
+      },
   });
 
   const shapes = document.querySelectorAll('.swiper-block');
   const slideColors = [
     'rgba(124,182,35,0.5)',
-    'rgba(41,31,78,0.7)',
+    'rgba(41,31,78,0.6)',
     'rgba(204,61,20,0.5)',
     'rgba(157,116,64,0.5)',
     'rgba(63,71,63,0.5)',
@@ -30,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     shapes.forEach(shape => {
       shape.style.backgroundColor = currentColor; // Застосовуємо колір для всіх блоків поточного слайда
-      shape.style.boxShadow = `0 0 100px 200px ${currentColor}`;
+      shape.style.boxShadow = `0 0 500px 300px ${currentColor}`;
     });
   });
 });
