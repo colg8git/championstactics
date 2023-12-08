@@ -50,6 +50,7 @@
     color: var(--primary-color);
     display: flex;
     align-items: center;
+    gap: 5%;
 }
 .footer-discord svg,
 .footer-x svg {
