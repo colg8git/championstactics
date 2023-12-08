@@ -65,6 +65,9 @@
         </header>
         <main class="main">
             <section class="main__section">
+                <video preload="auto" autoplay muted loop class="main-video">
+                    <source src="./source/video/trailer.mp4" type="video/mp4">
+                </video>
                 <div class="main__container">
                     <div class="main__title">
                         <div class="main-title-container">
@@ -79,7 +82,6 @@
                             </div>
                         </div>
                     </div>
-                    <!-- main__video(?) -->
                 </div>
             </section>
             <section class="about__section">
@@ -97,9 +99,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- <video autoplay muted loop class="about-video">
-                    <source src="./source/video/trailer.mp4" type="video/mp4">
-                </video> -->
             </section>
             <section class="champions__section">
                 <div class="champions__container">
@@ -121,15 +120,6 @@
                         </div>
                     </div>
                     <div class="champions__swiper animBlock">
-                        <div class="swiper-bg">
-                            <div class="swiper-block block-1 animBlock"></div>
-                            <!-- <div class="swiper-block block-2"></div>
-                            <div class="swiper-block block-3"></div>
-                            <div class="swiper-block block-4"></div>
-                            <div class="swiper-block block-5"></div>
-                            <div class="swiper-block block-6"></div>
-                            <div class="swiper-block block-7"></div> -->
-                        </div>
                         <div class="swiper__title">
                             <h1 class="swiper-title title text">FACTIONS & WARLORDS</h1>
                             <div class="swiper-text text">In the mystical realm of Grimoria, seven factions rise to prominence, each a testament to its own set of values, beliefs, and motivations. These factions shape the very essence of this world.
@@ -249,22 +239,17 @@
                             <div class="swiper-buttons">
                                 <div class="swiper-button swiper-button-1">
                                     <svg width="clamp(1.25rem, 1.071rem + 0.893vw, 1.875rem)" height="clamp(1.25rem, 1.071rem + 0.893vw, 1.875rem)" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                        <!-- Більший трикутник -->
                                         <path d="M10,90 L50,10 L90,90 Z" fill="white"/>
-                                        <!-- "Відламаний" шматочок сторони -->
-                                        <path d="M50,60 L70,10 L90,60 Z" fill="black"/>
-                                        <path d="M10,0 L10,70 L30,75 Z" fill="black"/>
                                     </svg>
                                 </div>
                                 <div class="swiper-button swiper-button-2">
                                     <svg width="clamp(1.25rem, 1.071rem + 0.893vw, 1.875rem)" height="clamp(1.25rem, 1.071rem + 0.893vw, 1.875rem)" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                                        <!-- Більший трикутник -->
                                         <path d="M10,90 L50,10 L90,90 Z" fill="white"/>
-                                        <!-- "Відламаний" шматочок сторони -->
-                                        <path d="M50,60 L70,10 L90,60 Z" fill="black"/>
-                                        <path d="M10,0 L10,70 L30,75 Z" fill="black"/>
                                     </svg>
                                 </div>
+                            </div>
+                        <div class="swiper-bg">
+                                <div class="swiper-block block-1 animBlock"></div>
                             </div>
                         </div>
                     </div>

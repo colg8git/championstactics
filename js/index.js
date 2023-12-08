@@ -3,8 +3,9 @@ document.addEventListener("DOMContentLoaded", function() {
       // Optional parameters
       direction: 'horizontal',
       autoplay: {
-        delay: 4000,
+        delay: 4300,
         pauseOnMouseEnter: true,
+        disableOnInteraction: false,
       },
 
       effect: 'cards',
@@ -20,38 +21,36 @@ document.addEventListener("DOMContentLoaded", function() {
 
   const shapes = document.querySelectorAll('.swiper-block');
   const slideColors = [
-    'rgba(124,182,35,0.5)',
-    'rgba(41,31,78,0.6)',
-    'rgba(204,61,20,0.5)',
-    'rgba(157,116,64,0.5)',
-    'rgba(63,71,63,0.5)',
-    'rgba(82,52,67,0.5)',
-    'rgba(76,111,63,0.5)'
+    'rgba(124,182,35,0.8)',
+    'rgba(41,31,78,0.8)',
+    'rgba(204,61,20,0.8)',
+    'rgba(157,116,64,0.8)',
+    'rgba(63,71,63,0.8)',
+    'rgba(82,52,67,0.8)',
+    'rgba(76,111,63,0.8)'
   ];
 
   swiper.on('slideChange', function () {
-    const activeSlideIndex = swiper.activeIndex; // Отримуємо індекс активного слайда
-    const currentColor = slideColors[activeSlideIndex]; // Отримуємо колір для поточного слайда
+    const activeSlideIndex = swiper.activeIndex;
+    const currentColor = slideColors[activeSlideIndex];
 
     shapes.forEach(shape => {
-      shape.style.backgroundColor = currentColor; // Застосовуємо колір для всіх блоків поточного слайда
-      shape.style.boxShadow = `0 0 500px 300px ${currentColor}`;
+      shape.style.backgroundColor = currentColor;
+      shape.style.boxShadow = `0 0 300px 300px ${currentColor}`;
     });
   });
-  const swiperContainer = document.querySelector('.swiper__main');
 
-  // Додавання обробника подій для торкання (натискання) на слайдері
-  swiperContainer.addEventListener('touchstart', () => {
-    // Перевірка, чи працює автоматична прокрутка
+  const sliderContainer = document.querySelector('.swiper');
+
+  sliderContainer.addEventListener('touchstart', function (e) {
     if (swiper.autoplay.running) {
-      // Зупинити автоматичну прокрутку при торканні на слайдері
       swiper.autoplay.stop();
     }
   });
 
-  // Додавання обробника подій для відпускання пальця зі слайдера
-  swiperContainer.addEventListener('touchend', () => {
-    // Відновлення автоматичної прокрутки після того, як користувач відпустив слайдер
-    swiper.autoplay.start();
+  document.body.addEventListener('touchend', function (e) {
+    if (!swiper.autoplay.running && !sliderContainer.contains(e.target)) {
+      swiper.autoplay.start();
+    }
   });
 });
