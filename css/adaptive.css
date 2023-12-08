@@ -215,7 +215,7 @@ body._lock {
 /* LAST-SECTION */
 @media (max-width: 769px) {
     .last__section {
-        margin-bottom: 100px;
+        margin-bottom: 0px;
     }
     .last__end {
         margin-top: 15%;
