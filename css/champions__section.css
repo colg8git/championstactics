@@ -179,18 +179,12 @@
     transition: all 0.3s ease 0s;
 }
 .block-1 {
-    right: -30%;
-    width: 500px;
-    height: 500px;
-    box-shadow: 0 0 300px 300px rgba(124,182,35,0.5);
+    right: -20%;
+    width: clamp(25rem, 23.214rem + 8.929vw, 31.25rem);
+    height: clamp(25rem, 23.214rem + 8.929vw, 31.25rem);
+    box-shadow: 0 0 clamp(12.5rem, 10.714rem + 8.929vw, 18.75rem) clamp(12.5rem, 10.714rem + 8.929vw, 18.75rem) rgba(124,182,35,0.5);
     border-radius: 50%;
 }
-.block-2 {}
-.block-3 {}
-.block-4 {}
-.block-5 {}
-.block-6 {}
-.block-7 {}
 .champions__swiper {
     margin-top: 100px;
     width: 100%;

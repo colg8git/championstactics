@@ -194,6 +194,21 @@ body._lock {
     .card-title {
         font-size: 20px;
     }
+    .swiper-bg {
+        justify-content: center;
+        align-items: center;
+    }
+    .block-1 {
+        top: 0;
+        left: 0;
+        right: 0;
+        filter: brightness(0.6);
+    }
+}
+@media (max-width: 430px) {
+    .block-1 {
+        top: 45%;
+    }
 }
 /* /SWIPER-SECTION */
 /* ----------------------------------------------------- */
@@ -224,3 +239,22 @@ body._lock {
     }
 }
 /* /LAST-SECTION */
+/* /FOOTER-SECTION */
+@media (max-width: 430px) {
+    .footer-title {
+        text-align: left;
+        letter-spacing: 0.5px;
+    }
+    .footer-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+        padding: 0 0 !important;
+    }
+    .thank {
+        margin-bottom: 150px;
+    }
+}
+/* /FOOTER-SECTION */

@@ -36,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     shapes.forEach(shape => {
       shape.style.backgroundColor = currentColor;
-      shape.style.boxShadow = `0 0 300px 300px ${currentColor}`;
+      shape.style.boxShadow = `0 0 clamp(12.5rem, 10.714rem + 8.929vw, 18.75rem) clamp(12.5rem, 10.714rem + 8.929vw, 18.75rem) ${currentColor}`;
     });
   });
 
